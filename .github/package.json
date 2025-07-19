@@ -1,0 +1,25 @@
+{
+  "name": "be-cicd-sub-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Radhika-agrawal/BE-CICD-Sub-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Radhika-agrawal/BE-CICD-Sub-Project/issues"
+  },
+  "homepage": "https://github.com/Radhika-agrawal/BE-CICD-Sub-Project#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "vitest": "^3.2.4"
+  }
+}

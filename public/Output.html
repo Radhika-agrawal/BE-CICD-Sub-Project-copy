@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subtraction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page heading -->
+    <h1>Subtraction Result</h1>
+
+    <!-- Placeholder for the result -->
+    <h2 id="output">Loading...</h2>
+
+    <!-- Link to go back to the input page -->
+    <a href="index.html">Try Another Subtraction</a>
+
+    <!-- JavaScript to load result from localStorage and display it -->
+    <script>
+        // Retrieve result stored in localStorage
+        const result = localStorage.getItem("subResult");
+
+        // Show the result if found, otherwise show an error message
+        if (result !== null) {
+            document.getElementById("output").textContent = "Result: " + result;
+        } else {
+            document.getElementById("output").textContent = "No result found. Please go back and try again.";
+        }
+
+        // Optional: Clear the stored result after showing it
+        // localStorage.removeItem("subResult");
+    </script>
+
+</body>
+</html>
